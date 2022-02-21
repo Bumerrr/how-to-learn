@@ -51,7 +51,6 @@ li{
   position: absolute;
   width: 388px;
   line-height: 25px;
-  position: absolute;
   font-weight: normal;
   padding-left: 64px;
   bottom: 30px;
@@ -84,7 +83,7 @@ li{
 
 .description__two-columns{
   display: flex;
-  margin: auto ;
+  margin: auto;
   justify-content: space-between;
   padding-top: 100px;
   width: 80%;
@@ -186,13 +185,13 @@ font-weight: normal;
 .feynman{
   position: relative;
   min-height: 890px;
-  background-color:#F2F2F2 ;
+  background-color:#F2F2F2;
   }
 
 .feynman__title{
   padding-top: 100px;
   width: 648px;
-  margin:  auto ;
+  margin:  auto;
   text-align: center;
   line-height: 1.15em;
   font-size: 120px;
@@ -218,7 +217,7 @@ font-weight: normal;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  color: #2f80ed; 
+  color:#2f80ed; 
   z-index: 100;
 }
 
@@ -227,10 +226,10 @@ font-weight: normal;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 867px ;
-  height: 637px ;
-  
-}
+  width: 867px;
+  height: 637px;
+  }
+
 .kaufman{
   overflow: hidden;
   justify-content: center;
@@ -255,7 +254,7 @@ font-weight: normal;
 .section__subtitle_theme_dark{
   color: white;
   width: 60%;
-  margin: 0 auto ;
+  margin: 0 auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -284,7 +283,7 @@ font-weight: normal;
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-left: 0 ;
+  margin-left: 0;
   margin-top: 80px;
 }
 
@@ -345,7 +344,7 @@ font-weight: normal;
 
 .footer__column-links{
   margin-top: 20px;
-  margin-bottom:16px ;
+  margin-bottom:16px;
   list-style: none;
   padding: 0;
   justify-content: space-between;
