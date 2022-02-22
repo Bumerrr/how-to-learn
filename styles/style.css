@@ -25,12 +25,13 @@ li{
 
 /* и элемента с модификатором вида ключ-значение */
 
+.logo{
+  width: 183px;
+}
 
 .logo_place_header{
   position: absolute;
-  background-image: url(../images/logo_place_header.svg);
   height: 32px;
-  width: 183px;
   top: 30px;
   left: 64px;
   }
@@ -56,7 +57,7 @@ li{
   bottom: 30px;
 
 }
-.header_main-illustration{
+.header__main-illustration{
   position: absolute;
   right: 0;
   width: 765px;
@@ -113,17 +114,7 @@ font-weight: normal;
   font-size:24px;
   font-weight: normal;
   display: flex;
-  margin:  0;
-}
-
-.description__two-columns__paragraph_1{
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  display: flex;
-  margin:  0;
-  padding-bottom:  30px; /* Поле снизу от текста */
-  padding-top: 30px; /* Поле сверху от текста */
+  margin: 0;
 }
 
 .two-columns__span-accent{
@@ -131,31 +122,36 @@ font-weight: normal;
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
-  padding: 10;
-  margin: 20px 0 0;
+}
+.digits{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border:red solid;
 }
 
-.section__title {
+.section-title {
   width: 60%;
   font-size: 60px;
   line-height: 1.15em;
   font-weight: bold;
   text-align: center;
-  margin: 100px auto 20px;
+  margin: auto;
+  border:red solid;
 }
 
-.section__subtitle {
+.section-subtitle {
   width: 60%;
-  margin: 0 auto 0;
+  margin: 20px auto 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
+  border:red solid;
 }
 
 .table {
   width: 1100px;
-  margin: 0px auto 100px;
+  margin: 0px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -240,7 +236,7 @@ font-weight: normal;
   flex-wrap: wrap;
   display: flex;
 }  
-.section__title_theme_dark{
+.section-title_theme_dark{
   width: 60%;
   font-size: 60px;
   line-height: 1.15em;
@@ -251,7 +247,7 @@ font-weight: normal;
   z-index: 2;
 
 }
-.section__subtitle_theme_dark{
+.section-subtitle_theme_dark{
   color: white;
   width: 60%;
   margin: 0 auto;
@@ -351,7 +347,7 @@ font-weight: normal;
   flex-direction: column;
 }
 
-.footer__column__content_social{
+.footer__column_content_social{
   color: #FFFFFF;
   flex-direction: column;
   justify-content: start;
@@ -366,7 +362,6 @@ font-weight: normal;
 .logo_place_footer{
  justify-content: center;
   height: 35px;
-  width: 183px;
  display: flex;
 }
 
