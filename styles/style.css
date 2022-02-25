@@ -1,7 +1,4 @@
-li{
-  list-style: none;
-}
-.page {
+q.page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -37,9 +34,10 @@ li{
   }
 
 .header__title{
+  padding: 0;
   display: flex;
   font-size: 102px;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-weight: bold;
   padding-left: 64px;
@@ -50,13 +48,18 @@ li{
 
 .header__subtitle{
   position: absolute;
-  width: 388px;
+  max-width: 388px;
   line-height: 25px;
   font-weight: normal;
   padding-left: 64px;
   bottom: 30px;
-
+  font-size: 18px;
 }
+
+.header__link{
+color:#2F80ED;
+}
+
 .header__main-illustration{
   position: absolute;
   right: 0;
@@ -65,6 +68,7 @@ li{
   bottom: 0;
   align-self: center;
   z-index: 10;
+  object-fit: cover;
   }
 
   /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -82,7 +86,7 @@ li{
   display: flex;
 }
 
-.description__two-columns{
+.two-columns{
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -90,7 +94,7 @@ li{
   width: 80%;
 }
 
-.description__two-columns__brief{
+.two-columns__brief{
 display: flex;
 width:175px;
 color: #2f80ed;
@@ -99,22 +103,24 @@ font-size: 18px;
 font-weight: normal;
 }
 
-.description__two-columns__main-text{
+.two-columns__main-text{
   display: flex;
   min-width: 784px;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
-  width: 80%;
+  max-width: 80%;
   flex-wrap: wrap;
+
 }
 
-.description__two-columns__paragraph{
+.two-columns__paragraph{
   line-height: 34px;
   font-size:24px;
   font-weight: normal;
   display: flex;
   margin: 0;
+
 }
 
 .two-columns__span-accent{
@@ -122,31 +128,33 @@ font-weight: normal;
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+
 }
 .digits{
   padding-top: 100px;
   padding-bottom: 100px;
-  border:red solid;
+
 }
 
 .section-title {
-  width: 60%;
+  padding: 0;
+  max-width: 60%;
   font-size: 60px;
   line-height: 1.15em;
   font-weight: bold;
   text-align: center;
   margin: auto;
-  border:red solid;
+
 }
 
 .section-subtitle {
-  width: 60%;
+  max-width: 60%;
   margin: 20px auto 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  border:red solid;
+
 }
 
 .table {
@@ -156,12 +164,14 @@ font-weight: normal;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
+ 
 } 
 
-.table__cell_theme_light{
+.table__cell{
   width: 250px;
   margin: 60px 0 0;
   list-style: none;
+ 
 }
 
 .table__heading{
@@ -169,6 +179,7 @@ font-weight: normal;
   font-size: 24px;
   font-weight: bold;
   margin: 0px;
+ 
 }
 
 .table__text {
@@ -176,6 +187,7 @@ font-weight: normal;
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0 0;
+  
 }
 
 .feynman{
@@ -186,7 +198,7 @@ font-weight: normal;
 
 .feynman__title{
   padding-top: 100px;
-  width: 648px;
+  max-width: 648px;
   margin:  auto;
   text-align: center;
   line-height: 1.15em;
@@ -230,7 +242,7 @@ font-weight: normal;
   overflow: hidden;
   justify-content: center;
   position: relative;
-  background-color: #000000;
+  background-color: #1f1f1f;
   padding-bottom: 90px;
   padding-top: 90px;
   flex-wrap: wrap;
@@ -245,8 +257,8 @@ font-weight: normal;
   margin: 0 auto 20px;
   color: white;
   z-index: 2;
-
 }
+
 .section-subtitle_theme_dark{
   color: white;
   width: 60%;
@@ -261,7 +273,7 @@ font-weight: normal;
 .table_theme_dark{
   color: white;
   width: 1100px;
-  margin: 0px auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -281,6 +293,7 @@ font-weight: normal;
   margin-right: 0;
   margin-left: 0;
   margin-top: 80px;
+  list-style: none;
 }
 
 .kaufman__triangle{
@@ -296,7 +309,7 @@ font-weight: normal;
   position: relative;
   padding-top: 60px;
   padding-bottom: 40px;
-  background-color: #000000;
+  background-color: #1f1f1f;
   box-sizing: border-box;
 }
 
@@ -304,7 +317,6 @@ font-weight: normal;
   margin: 0 auto;
   width: 90%;
   display: flex;
-  min-height: 350px;
   block-size: 100%;
   justify-content: space-between;
 }
@@ -361,7 +373,7 @@ font-weight: normal;
 
 .logo_place_footer{
  justify-content: center;
-  height: 35px;
+ height: 35px;
  display: flex;
 }
 
@@ -372,4 +384,5 @@ font-weight: normal;
   font-style: normal;
   text-decoration: none;
   display: flex;
+  color: #2F80ED;
 }
