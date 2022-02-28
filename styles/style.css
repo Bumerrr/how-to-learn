@@ -382,7 +382,7 @@
  display: flex;
 }
 
-.footer__columns-link{
+.footer__column-link{
   margin-left: 0;
   line-height: 30px;
   font-size: 18px;
