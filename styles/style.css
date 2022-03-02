@@ -104,7 +104,6 @@
 }
 
 .two-columns__main-text{
-  display: flex;
   min-width: 784px;
   font-size: 24px;
   font-weight: normal;
@@ -117,18 +116,14 @@
   line-height: 34px;
   font-size:24px;
   font-weight: normal;
-  display: flex;
   margin: 0;
-  align-items: center;
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent{
-  display: flex;
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .digits{
